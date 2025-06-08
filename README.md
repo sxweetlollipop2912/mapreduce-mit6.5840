@@ -17,7 +17,7 @@ tolerance, allowing the user to focus on the logic of the `map` and
 
 ## Architecture & Features
 
-The system uses a coordinator/worker architecture communicating via RPC.
+The system uses a coordinator/worker architecture communicating via RPC. Two main code files: `mr/coordinator.go` and `mr/worker.go`.
 
 *   **Coordinator**: A single master process responsible for:
     *   **Task Scheduling**: Assigns map and reduce tasks to workers. Map tasks are created for each input file and run to completion before reduce tasks are scheduled.
